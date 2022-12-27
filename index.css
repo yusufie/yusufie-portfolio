@@ -1,0 +1,423 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+	height: 100%;
+  }
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(-70deg, #1a0f3e 53%, #5444c6 100%);
+  color: #919191;
+  font-family: "Space Mono", monospace;
+  font-size: 16px;
+}
+
+.hero {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 20vh;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+div.header nav ul li {
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: transform 0.7s ease;
+}
+
+h1 {
+  color: #00ffff;
+  padding-top: 30px;
+  letter-spacing: 1px;
+  font-size: 4vw;
+  transition: transform 0.7s ease;
+}
+h2 {
+  color: #00ffff;
+  padding-top: 10px;
+  letter-spacing: 5px;
+  font-size: 3vw;
+  transition: transform 0.7s ease;
+}
+h1:hover {
+  color: #ff0099;
+  transform: scale(1.05);
+}
+h2:hover {
+  color: #ff0099;
+  transform: scale(1.03);
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 10vh;
+}
+
+p {
+  color: #00ffff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.7em;
+}
+
+i {
+  color: #e5e1e1;
+  margin: 15px;
+  transition: transform 0.7s ease;
+}
+
+i:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+  color: #00ffff;
+}
+a {
+  text-decoration: none;
+  color: #00ffff;
+}
+a:hover {
+  color: #ff0099;
+}
+
+.background {
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.background-image {
+  background-image: url("./sources/space-earth.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: -2;
+  opacity: 0.5;
+}
+
+/* glassmorfic buttons start */
+
+.glass-morphism {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.glass-morphism .btn {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 250px;
+	height: 50px;
+	margin: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.glass-morphism .btn a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(255, 255, 255, 0.05);
+	box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 30px;
+	padding: 10px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	overflow: hidden;
+	color: #fff;
+	font-weight: 400px;
+	z-index: 1;
+	transition: 0.5s;
+	backdrop-filter: blur(15px);
+}
+.glass-morphism .btn:hover a {
+	letter-spacing: 3px;
+}
+.glass-morphism .btn a::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+	transform: skewX(45deg) translate(0);
+	transition: 0.5s;
+	filter: blur(0px);
+}
+.glass-morphism .btn:hover a::before {
+	transform: skewX(45deg) translate(200px);
+}
+.glass-morphism .btn::before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+	bottom: -5px;
+	width: 30px;
+	height: 10px;
+	background: #f00;
+	border-radius: 10px;
+	transition: 0.5s;
+	transition-delay: 0.5;
+}
+.glass-morphism .btn:hover::before /*lightup button*/ {
+	bottom: 0;
+	height: 50%;
+	width: 80%;
+	border-radius: 30px;
+}
+
+.glass-morphism .btn::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+	top: -5px;
+	width: 30px;
+	height: 10px;
+	background: #f00;
+	border-radius: 10px;
+	transition: 0.5s;
+	transition-delay: 0.5;
+}
+.glass-morphism .btn:hover::after /*lightup button*/ {
+	top: 0;
+	height: 50%;
+	width: 80%;
+	border-radius: 30px;
+}
+.glass-morphism .btn:nth-child(1)::before, /*chnage 1*/
+.glass-morphism .btn:nth-child(1)::after {
+	background: #ff1f71;
+	box-shadow: 0 0 5px #ff1f71, 0 0 15px #ff1f71, 0 0 30px #ff1f71,
+		0 0 60px #ff1f71;
+}
+.glass-morphism .btn:nth-child(2)::before, /* 2*/
+.glass-morphism .btn:nth-child(2)::after {
+	background: #2db2ff;
+	box-shadow: 0 0 5px #2db2ff, 0 0 15px #2db2ff, 0 0 30px #2db2ff,
+		0 0 60px #2db2ff;
+}
+.glass-morphism .btn:nth-child(3)::before, /* 3*/
+.glass-morphism .btn:nth-child(3)::after {
+	background: #1eff45;
+	box-shadow: 0 0 5px #1eff45, 0 0 15px #1eff45, 0 0 30px #1eff45,
+		0 0 60px #1eff45;
+}
+
+/* glassmorfic buttons end */
+
+
+
+
+/* sections start */
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	padding: 20px;
+  }
+
+.section {
+	margin-top: 5em;
+  }
+  
+  .section__title {
+	text-align: center;
+	margin-bottom: 1em;
+	padding: 2em;
+	text-transform: uppercase;
+  }
+
+.about {
+	flex-direction: column;
+	width: 90%;
+	padding: 30px;
+	margin: 0 auto;
+	z-index: 2;
+  }
+  
+  .about__role {
+	margin-top: 1.2em;
+  }
+  
+  .about__desc {
+	font-size: 1rem;
+	max-width: 600px;
+  }
+  
+  .about__desc,
+  .about__contact {
+	margin-top: 2.4em;
+  }
+  
+  .about .link--icon {
+	float: right;
+	margin-right: 0.8em;
+  }
+  
+  .about .btn--outline {
+	margin-right: 1em;
+  }
+
+  .projects__grid {
+	max-width: 90%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+	grid-gap: 3em;
+  }
+  
+  .project {
+	padding: 2em;
+	margin: 0 auto;
+	text-align: center;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	border-radius: 6px;
+	transition: transform 0.2s linear;
+  }
+  
+  .project:hover {
+	transform: translateY(-7px);
+  }
+  
+  .project__description {
+	margin-top: 1em;
+	padding-top: 20px;
+  }
+  
+  .project__stack {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 1.2em 0;
+  }
+  
+  .project__stack-item {
+	margin: 0.5em;
+	font-weight: 300;
+	font-size: 0.8rem;
+	color: var(--clr-fg-alt);
+  }
+  .project__stack-item:hover {
+	color: var(--clr-primary);
+  }
+  
+  .project .link--icon {
+	margin-left: 0.5em;
+  }
+
+  .skills__list {
+	max-width: 450px;
+	width: 95%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+  }
+  
+  .skills__list-item {
+	margin: 0.5em;
+  }
+
+
+  .logo {
+	border-radius: 50%;
+	border: 2px dotted #03dac6;
+	width: 34%;
+	padding: 10px;
+	margin: 10px;
+	z-index: 1;
+  }
+  
+  .it {
+	transition: transform 0.7s ease;
+  }
+  .it:hover {
+	transform: scale(1.1);
+  }
+
+
+  .link {
+	color: var(--clr-primary);
+	padding: 0 0 0.3em 0;
+	position: relative;
+	z-index: 3;
+  }
+  
+  .link:hover {
+	color: var(--clr-primary);
+  }
+  
+  .link::before {
+	content: "";
+	display: inline;
+	width: 0%;
+	height: 0.2em;
+	position: absolute;
+	bottom: 0;
+	background-color: var(--clr-primary);
+	transition: width 0.2s ease-in;
+	z-index: 3;
+  }
+  
+  .link:hover::before,
+  .link:focus::before {
+	width: 100%;
+  }
+  
+  .link--nav {
+	color: var(--clr-fg);
+	font-weight: 300;
+	z-index: 3;
+  }
+  
+  .link--icon {
+	color: var(--clr-fg);
+	font-size: 2rem;
+  }
+
+/* sections end */
+
+

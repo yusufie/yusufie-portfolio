@@ -307,12 +307,6 @@ a:hover {
 	margin-right: 1em;
   }
 
-  .section.projects {
-	margin-top: 10em;
-	margin-bottom: 10em;
-	padding: 5rem;
-  }
-
   .projects__grid {
 	max-width: 90%;
 	margin: 0 auto;

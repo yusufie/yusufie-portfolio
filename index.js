@@ -48,16 +48,15 @@ heroDiv.innerHTML = "<h1>Hello World!</h1><h2>I&apos;m Yusuf</h2>";
 
 
 
-
 // don't display the hero div element on page load //
 document.querySelector(".hero").style.display = "none";
   // add event listener to btn div element to show and hide the section element with id name "btnHome" //
   document.querySelector("#btnHome").addEventListener("click", function () {
-    var showMe = document.querySelector(".hero");
-    if (showMe.style.display === "none") {
-      showMe.style.display = "block";
+    var heroDiv = document.querySelector(".hero");
+    if (heroDiv.style.display === "none") {
+      heroDiv.style.display = "block";
     } else {
-      showMe.style.display = "none";
+      heroDiv.style.display = "none";
     }
   });
 
@@ -90,15 +89,15 @@ document.querySelector("#btnProjects").addEventListener("click", function () {
 document.querySelector("#btnHome").addEventListener("click", function () {
   var skills = document.querySelector(".skills");
   var projects = document.querySelector(".projects");
-  var showMe = document.querySelector(".hero");
+  var heroDiv = document.querySelector(".hero");
   if (skills.style.display === "block") {
     skills.style.display = "none";
   }
   if (projects.style.display === "block") {
     projects.style.display = "none";
   }
-  if (showMe.style.display === "none") {
-    showMe.style.display = "block";
+  if (heroDiv.style.display === "none") {
+    heroDiv.style.display = "block";
   }
 });
 
@@ -106,15 +105,15 @@ document.querySelector("#btnHome").addEventListener("click", function () {
 document.querySelector("#btnSkills").addEventListener("click", function () {
   var skills = document.querySelector(".skills");
   var projects = document.querySelector(".projects");
-  var showMe = document.querySelector(".hero");
+  var heroDiv = document.querySelector(".hero");
   if (skills.style.display === "none") {
     skills.style.display = "block";
   }
   if (projects.style.display === "block") {
     projects.style.display = "none";
   }
-  if (showMe.style.display === "block") {
-    showMe.style.display = "none";
+  if (heroDiv.style.display === "block") {
+    heroDiv.style.display = "none";
   }
 });
 
@@ -122,15 +121,15 @@ document.querySelector("#btnSkills").addEventListener("click", function () {
 document.querySelector("#btnProjects").addEventListener("click", function () {
   var skills = document.querySelector(".skills");
   var projects = document.querySelector(".projects");
-  var showMe = document.querySelector(".hero");
+  var heroDiv = document.querySelector(".hero");
   if (skills.style.display === "block") {
     skills.style.display = "none";
   }
   if (projects.style.display === "none") {
     projects.style.display = "block";
   }
-  if (showMe.style.display === "block") {
-    showMe.style.display = "none";
+  if (heroDiv.style.display === "block") {
+    heroDiv.style.display = "none";
   }
 });
 

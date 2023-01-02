@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <title>Yusuf Aknar - WebDev</title>
@@ -18,8 +17,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500&family=Raleway:wght@100;200;300;400;500&family=Roboto:wght@300;400;700&display=swap" >
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700&family=Poppins:wght@300;400&family=Space+Mono:wght@400;700&display=swap" >
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/4.0.0/iconfont/material-icons.min.css'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./index.css">
-  
 </head>
 
 <body>
@@ -28,258 +27,258 @@
 
   <header>
     <div class="header">
-      <nav>
-        <ul>
-          <li><a href="#" >Home</a></li>
-          <li><a href="#projects" >Projects</a></li>
-          <li><a href="#skills" >Skills</a></li>
-
-        </ul>
-      </nav>
+<!--      <nav>
+            <ul><li><a href="#" >Home</a></li><li><a href="#projects" >Projects</a></li><li><a href="#skills" >Skills</a></li></ul>
+          </nav> -->
     </div>
   </header>
   
   <div class="hero"></div>
+
+
+  <!-- ------------------ -->
+  <div class="container">
+
+              <!-- Projects-->
+        <section class="projects" id="projects">
+
+          <h2 class="section__title it">Projects</h2>
+          <div class="projects__grid">
+
+                  <div class="project" id="project-card-5">
+                    <h3>Movie Page - Recoded</h3>
+                    <p class="project__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id posuere est. Aliquam mollis, dolor ut ullamcorper mollis, diam turpis fermentum libero, in gravida nunc elit ut arcu.</p>
+                    <ul class="project__stack">
+                      <li class="project__stack-item">React</li>
+                      <li class="project__stack-item">Express</li>
+                      <li class="project__stack-item">PostgreSQL</li>
+                    </ul>
+                    <a class="link link--icon" href="#" aria-label="source code">
+                      <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a class="link link--icon" href="#" aria-label="live preview">
+                      <i class="fab fa-codepen" aria-hidden="true"></i>
+                    </a>
+                  </div>
+
+                  <div class="project" id="project-card-1">
+                    <h3>developer - Page</h3>
+                    <p class="project__description">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce porttitor enim diam, sit amet eleifend ligula consequat nec. Duis tristique condimentum sollicitudin.</p>
+                    <ul class="project__stack">
+                      <li class="project__stack-item">React</li>
+                      <li class="project__stack-item">Material UI</li>
+                      <li class="project__stack-item">API</li>
+                    </ul>
+                    <a class="link link--icon" href="#" aria-label="source code">
+                      <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a class="link link--icon" href="#" aria-label="live preview">
+                      <i class="fab fa-codepen" aria-hidden="true"></i>
+                    </a>
+                  </div>
+
+                  <div class="project" id="project-card-2">
+                    <h3>Portfolio - Page</h3>
+                    <p class="project__description">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce porttitor enim diam, sit amet eleifend ligula consequat nec. Duis tristique condimentum sollicitudin.</p>
+                    <ul class="project__stack">
+                      <li class="project__stack-item">React</li>
+                      <li class="project__stack-item">Material UI</li>
+                      <li class="project__stack-item">API</li>
+                    </ul>
+                    <a class="link link--icon" href="#" aria-label="source code">
+                      <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a class="link link--icon" href="#" aria-label="live preview">
+                      <i class="fab fa-codepen" aria-hidden="true"></i>
+                    </a>
+                  </div>
+
+                  <div class="project" id="project-card-3">
+                    <h3>Madlibs - Policeman</h3>
+                    <p class="project__description">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce porttitor enim diam, sit amet eleifend ligula consequat nec. Duis tristique condimentum sollicitudin.</p>
+                    <ul class="project__stack">
+                      <li class="project__stack-item">React</li>
+                      <li class="project__stack-item">Material UI</li>
+                      <li class="project__stack-item">API</li>
+                    </ul>
+                    <a class="link link--icon" href="#" aria-label="source code">
+                      <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a class="link link--icon" href="#" aria-label="live preview">
+                      <i class="fab fa-codepen" aria-hidden="true"></i>
+                    </a>
+                  </div>
+
+                  <div class="project" id="project-card-4">
+                    <h3>Hangman - Harry Potter</h3>
+                    <p class="project__description">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce porttitor enim diam, sit amet eleifend ligula consequat nec. Duis tristique condimentum sollicitudin.</p>
+                    <ul class="project__stack">
+                      <li class="project__stack-item">React</li>
+                      <li class="project__stack-item">Material UI</li>
+                      <li class="project__stack-item">API</li>
+                    </ul>
+                    <a class="link link--icon" href="#" aria-label="source code">
+                      <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a class="link link--icon" href="#" aria-label="live preview">
+                      <i class="fab fa-codepen" aria-hidden="true"></i>
+                    </a>
+                  </div>
+
+                  <div class="project" id="project-card-6">
+                    <h3>Tribute Page - FreeCodeCamp</h3>
+                    <p class="project__description">In at volutpat sem. Vivamus gravida volutpat dolor, vel lobortis diam. Praesent ac consectetur purus, in euismod enim. Donec massa risus, commodo quis aliquam eu, molestie ut arcu.</p>
+                    <ul class="project__stack">
+                      <li class="project__stack-item">React</li>
+                      <li class="project__stack-item">PHP</li>
+                      <li class="project__stack-item">Firebase</li>
+                    </ul>
+                    <a class="link link--icon" href="#" aria-label="source code">
+                      <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a class="link link--icon" href="#" aria-label="live preview">
+                      <i class="fab fa-codepen" aria-hidden="true"></i>
+                    </a>
+                  </div>
+
+                  <div class="project" id="project-card-7">
+                    <h3>Honey - Product</h3>
+                    <p class="project__description">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce porttitor enim diam, sit amet eleifend ligula consequat nec. Duis tristique condimentum sollicitudin.</p>
+                    <ul class="project__stack">
+                      <li class="project__stack-item">React</li>
+                      <li class="project__stack-item">Material UI</li>
+                      <li class="project__stack-item">API</li>
+                    </ul>
+                    <a class="link link--icon" href="#" aria-label="source code">
+                      <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a class="link link--icon" href="#" aria-label="live preview">
+                      <i class="fab fa-codepen" aria-hidden="true"></i>
+                    </a>
+                  </div>
+
+                  <div class="project" id="project-card-8">
+                    <h3>Honey - Product</h3>
+                    <p class="project__description">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce porttitor enim diam, sit amet eleifend ligula consequat nec. Duis tristique condimentum sollicitudin.</p>
+                    <ul class="project__stack">
+                      <li class="project__stack-item">React</li>
+                      <li class="project__stack-item">Material UI</li>
+                      <li class="project__stack-item">API</li>
+                    </ul>
+                    <a class="link link--icon" href="#" aria-label="source code">
+                      <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a class="link link--icon" href="#" aria-label="live preview">
+                      <i class="fab fa-codepen" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+        </section>
+
+        <!-- Skills-->
+        <section class="skills" id="skills">
+          <div class="section skills" id="skills">
+            <h2 class="section__title it">Skills</h2>
+      
+            <div class="skill-card">
+      
+              <a class="skills-item" href="https://www.linkedin.com/in/yusufaknar/" target="_blank" rel="noopener noreferrer">
+                <img src="./sources/vector-logo/linkedin-logo.svg" class="skill-card__image" alt="linkedin">
+              </a>
+      
+              <a class="skills-item" href="https://github.com/yusufie" target="_blank" rel="noopener noreferrer">
+                <img src="./sources/vector-logo/github-logo.svg" class="skill-card__image" alt="Github">
+              </a>
+      
+              <a class="skills-item" href="https://www.w3profile.com/yusufie" target="_blank" rel="noopener noreferrer">
+                <img src="./sources/vector-logo/w3schools-logo.svg" class="skill-card__image" alt="w3schools">
+              </a>
+      
+              <a class="skills-item" href="https://www.freecodecamp.org/yusufie" target="_blank" rel="noopener noreferrer">
+                <img src="./sources/vector-logo/freecodecamp-logo-white.svg" class="skill-card__image" alt="freecodecamp">
+              </a>
+      
+              <a class="skills-item" href="https://www.hackerrank.com/yusufie" target="_blank" rel="noopener noreferrer">
+                <img src="./sources/vector-logo/hackerrank-logo.svg" class="skill-card__image" alt="hackerrank">
+              </a>
+      
+              <a class="skills-item" href="https://coderbyte.com/profile/yusufie" target="_blank" rel="noopener noreferrer">
+                <img src="./sources/vector-logo/coderbyte-logo.svg" class="skill-card__image" alt="coderbyte">
+              </a>
+      
+              <a class="skills-item" href="https://www.codewars.com/users/yusufie" target="_blank" rel="noopener noreferrer">
+                <img src="./sources/vector-logo/codewars-logo.svg" class="skill-card__image" alt="codewars">
+              </a>
+      
+              <a class="skills-item" href="https://leetcode.com/yusufie/" target="_blank" rel="noopener noreferrer">
+                <img src="./sources/vector-logo/leetcode-logo.svg" class="skill-card__image" alt="leetcode">
+              </a>
+      
+              <a class="skills-item" href="https://stackoverflow.com/users/19926018/yusufie" target="_blank" rel="noopener noreferrer">
+                <img src="./sources/vector-logo/stackoverflow-logo.svg" class="skill-card__image" alt="stackoverflow">
+              </a>
+      
+              <a class="skills-item" href="#">
+                <img src="./sources/vector-logo/html-logo.svg" class="skill-card__image" alt="html">
+              </a>
+      
+              <a class="skills-item" href="#">
+                <img src="./sources/vector-logo/css-logo.svg" class="skill-card__image" alt="Css">
+              </a>
+      
+              <a class="skills-item" href="#">
+                <img src="./sources/vector-logo/javascript-logo.svg" class="skill-card__image" alt="Javascript">
+              </a>
+      
+              <a class="skills-item" href="#">
+                <img src="./sources/vector-logo/sass-logo.svg" class="skill-card__image" alt="Sass">
+              </a>
+      
+              <a class="skills-item" href="#">
+                <img src="./sources/vector-logo/react-icon.svg" class="skill-card__image" alt="React">
+              </a>
+      
+              <a class="skills-item" href="#">
+                <img src="./sources/vector-logo/less-logo.svg" class="skill-card__image" alt="Less">
+              </a>
+      
+              <a class="skills-item" href="#">
+                <img src="./sources/vector-logo/bootstrap-logo.svg" class="skill-card__image" alt="Bootstrap">
+              </a>
+      
+              <a class="skills-item" href="#">
+                <img src="./sources/vector-logo/tailwind-logo.svg" class="skill-card__image" alt="Tailwind">
+              </a>
+      
+              <a class="skills-item" href="#">
+                <img src="./sources/vector-logo/git-logo.svg" class="skill-card__image" alt="Git">
+              </a>
+      
+              <a class="skills-item" href="#">
+                <img src="./sources/vector-logo/figma-logo.svg" class="skill-card__image" alt="Figma">
+              </a>
+        
+            </div>    
+          </div>
+        </section>
+
+  </div>
+<!-- ------------------ -->
+
       
   <div class="glass-morphism">
         <div class="btn" id="btnHome"><a href="#" >Home</a></div>
         <div class="btn" id="btnProjects"><a href="#projects" >Projects</a></div>
         <div class="btn" id="btnSkills"><a href="#skills" >Skills</a></div>
-  </div>	
-<!-- ------------------ -->
-
-  <!-- Projects-->
-  <section class="section projects" id="projects">
-
-    <h2 class="section__title it">Projects</h2>
-    <div class="projects__grid">
-
-      <div class="project" id="project-card-5">
-        <h3>Movie Page - Recoded</h3>
-        <p class="project__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id posuere est. Aliquam mollis, dolor ut ullamcorper mollis, diam turpis fermentum libero, in gravida nunc elit ut arcu.</p>
-        <ul class="project__stack">
-          <li class="project__stack-item">React</li>
-          <li class="project__stack-item">Express</li>
-          <li class="project__stack-item">PostgreSQL</li>
-        </ul>
-        <a class="link link--icon" href="#" aria-label="source code">
-          <i class="fab fa-github" aria-hidden="true"></i>
-        </a>
-        <a class="link link--icon" href="#" aria-label="live preview">
-          <i class="fab fa-codepen" aria-hidden="true"></i>
-        </a>
-      </div>
-
-      <div class="project" id="project-card-1">
-        <h3>developer - Page</h3>
-        <p class="project__description">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce porttitor enim diam, sit amet eleifend ligula consequat nec. Duis tristique condimentum sollicitudin.</p>
-        <ul class="project__stack">
-          <li class="project__stack-item">React</li>
-          <li class="project__stack-item">Material UI</li>
-          <li class="project__stack-item">API</li>
-        </ul>
-        <a class="link link--icon" href="#" aria-label="source code">
-          <i class="fab fa-github" aria-hidden="true"></i>
-        </a>
-        <a class="link link--icon" href="#" aria-label="live preview">
-          <i class="fab fa-codepen" aria-hidden="true"></i>
-        </a>
-      </div>
-
-      <div class="project" id="project-card-2">
-        <h3>Portfolio - Page</h3>
-        <p class="project__description">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce porttitor enim diam, sit amet eleifend ligula consequat nec. Duis tristique condimentum sollicitudin.</p>
-        <ul class="project__stack">
-          <li class="project__stack-item">React</li>
-          <li class="project__stack-item">Material UI</li>
-          <li class="project__stack-item">API</li>
-        </ul>
-        <a class="link link--icon" href="#" aria-label="source code">
-          <i class="fab fa-github" aria-hidden="true"></i>
-        </a>
-        <a class="link link--icon" href="#" aria-label="live preview">
-          <i class="fab fa-codepen" aria-hidden="true"></i>
-        </a>
-      </div>
-
-      <div class="project" id="project-card-3">
-        <h3>Madlibs - Policeman</h3>
-        <p class="project__description">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce porttitor enim diam, sit amet eleifend ligula consequat nec. Duis tristique condimentum sollicitudin.</p>
-        <ul class="project__stack">
-          <li class="project__stack-item">React</li>
-          <li class="project__stack-item">Material UI</li>
-          <li class="project__stack-item">API</li>
-        </ul>
-        <a class="link link--icon" href="#" aria-label="source code">
-          <i class="fab fa-github" aria-hidden="true"></i>
-        </a>
-        <a class="link link--icon" href="#" aria-label="live preview">
-          <i class="fab fa-codepen" aria-hidden="true"></i>
-        </a>
-      </div>
-
-      <div class="project" id="project-card-4">
-        <h3>Hangman - Harry Potter</h3>
-        <p class="project__description">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce porttitor enim diam, sit amet eleifend ligula consequat nec. Duis tristique condimentum sollicitudin.</p>
-        <ul class="project__stack">
-          <li class="project__stack-item">React</li>
-          <li class="project__stack-item">Material UI</li>
-          <li class="project__stack-item">API</li>
-        </ul>
-        <a class="link link--icon" href="#" aria-label="source code">
-          <i class="fab fa-github" aria-hidden="true"></i>
-        </a>
-        <a class="link link--icon" href="#" aria-label="live preview">
-          <i class="fab fa-codepen" aria-hidden="true"></i>
-        </a>
-      </div>
-
-      <div class="project" id="project-card-6">
-        <h3>Tribute Page - FreeCodeCamp</h3>
-        <p class="project__description">In at volutpat sem. Vivamus gravida volutpat dolor, vel lobortis diam. Praesent ac consectetur purus, in euismod enim. Donec massa risus, commodo quis aliquam eu, molestie ut arcu.</p>
-        <ul class="project__stack">
-          <li class="project__stack-item">React</li>
-          <li class="project__stack-item">PHP</li>
-          <li class="project__stack-item">Firebase</li>
-        </ul>
-        <a class="link link--icon" href="#" aria-label="source code">
-          <i class="fab fa-github" aria-hidden="true"></i>
-        </a>
-        <a class="link link--icon" href="#" aria-label="live preview">
-          <i class="fab fa-codepen" aria-hidden="true"></i>
-        </a>
-      </div>
-
-      <div class="project" id="project-card-7">
-        <h3>Honey - Product</h3>
-        <p class="project__description">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce porttitor enim diam, sit amet eleifend ligula consequat nec. Duis tristique condimentum sollicitudin.</p>
-        <ul class="project__stack">
-          <li class="project__stack-item">React</li>
-          <li class="project__stack-item">Material UI</li>
-          <li class="project__stack-item">API</li>
-        </ul>
-        <a class="link link--icon" href="#" aria-label="source code">
-          <i class="fab fa-github" aria-hidden="true"></i>
-        </a>
-        <a class="link link--icon" href="#" aria-label="live preview">
-          <i class="fab fa-codepen" aria-hidden="true"></i>
-        </a>
-      </div>
-
-      <div class="project" id="project-card-8">
-        <h3>Honey - Product</h3>
-        <p class="project__description">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce porttitor enim diam, sit amet eleifend ligula consequat nec. Duis tristique condimentum sollicitudin.</p>
-        <ul class="project__stack">
-          <li class="project__stack-item">React</li>
-          <li class="project__stack-item">Material UI</li>
-          <li class="project__stack-item">API</li>
-        </ul>
-        <a class="link link--icon" href="#" aria-label="source code">
-          <i class="fab fa-github" aria-hidden="true"></i>
-        </a>
-        <a class="link link--icon" href="#" aria-label="live preview">
-          <i class="fab fa-codepen" aria-hidden="true"></i>
-        </a>
-      </div>
-
-
-    </div>
-  </section>
-
-        <!-- Skills-->
-  <section class="skills" id="skills">
-    <div class="section skills" id="skills">
-      <h2 class="section__title it">Skills</h2>
-
-      <div class="skill-card">
-
-        <a class="skills-item" href="https://www.linkedin.com/in/yusufaknar/" target="_blank" rel="noopener noreferrer">
-          <img src="./sources/vector-logo/linkedin-logo.svg" class="skill-card__image" alt="linkedin">
-        </a>
-
-        <a class="skills-item" href="https://github.com/yusufie" target="_blank" rel="noopener noreferrer">
-          <img src="./sources/vector-logo/github-logo.svg" class="skill-card__image" alt="Github">
-        </a>
-
-        <a class="skills-item" href="https://www.w3profile.com/yusufie" target="_blank" rel="noopener noreferrer">
-          <img src="./sources/vector-logo/w3schools-logo.svg" class="skill-card__image" alt="w3schools">
-        </a>
-
-        <a class="skills-item" href="https://www.freecodecamp.org/yusufie" target="_blank" rel="noopener noreferrer">
-          <img src="./sources/vector-logo/freecodecamp-logo-white.svg" class="skill-card__image" alt="freecodecamp">
-        </a>
-
-        <a class="skills-item" href="https://www.hackerrank.com/yusufie" target="_blank" rel="noopener noreferrer">
-          <img src="./sources/vector-logo/hackerrank-logo.svg" class="skill-card__image" alt="hackerrank">
-        </a>
-
-        <a class="skills-item" href="https://coderbyte.com/profile/yusufie" target="_blank" rel="noopener noreferrer">
-          <img src="./sources/vector-logo/coderbyte-logo.svg" class="skill-card__image" alt="coderbyte">
-        </a>
-
-        <a class="skills-item" href="https://www.codewars.com/users/yusufie" target="_blank" rel="noopener noreferrer">
-          <img src="./sources/vector-logo/codewars-logo.svg" class="skill-card__image" alt="codewars">
-        </a>
-
-        <a class="skills-item" href="https://leetcode.com/yusufie/" target="_blank" rel="noopener noreferrer">
-          <img src="./sources/vector-logo/leetcode-logo.svg" class="skill-card__image" alt="leetcode">
-        </a>
-
-        <a class="skills-item" href="https://stackoverflow.com/users/19926018/yusufie" target="_blank" rel="noopener noreferrer">
-          <img src="./sources/vector-logo/stackoverflow-logo.svg" class="skill-card__image" alt="stackoverflow">
-        </a>
-
-        <a class="skills-item" href="#">
-          <img src="./sources/vector-logo/html-logo.svg" class="skill-card__image" alt="html">
-        </a>
-
-        <a class="skills-item" href="#">
-          <img src="./sources/vector-logo/css-logo.svg" class="skill-card__image" alt="Css">
-        </a>
-
-        <a class="skills-item" href="#">
-          <img src="./sources/vector-logo/javascript-logo.svg" class="skill-card__image" alt="Javascript">
-        </a>
-
-        <a class="skills-item" href="#">
-          <img src="./sources/vector-logo/sass-logo.svg" class="skill-card__image" alt="Sass">
-        </a>
-
-        <a class="skills-item" href="#">
-          <img src="./sources/vector-logo/react-icon.svg" class="skill-card__image" alt="React">
-        </a>
-
-        <a class="skills-item" href="#">
-          <img src="./sources/vector-logo/less-logo.svg" class="skill-card__image" alt="Less">
-        </a>
-
-        <a class="skills-item" href="#">
-          <img src="./sources/vector-logo/bootstrap-logo.svg" class="skill-card__image" alt="Bootstrap">
-        </a>
-
-        <a class="skills-item" href="#">
-          <img src="./sources/vector-logo/tailwind-logo.svg" class="skill-card__image" alt="Tailwind">
-        </a>
-
-        <a class="skills-item" href="#">
-          <img src="./sources/vector-logo/git-logo.svg" class="skill-card__image" alt="Git">
-        </a>
-
-        <a class="skills-item" href="#">
-          <img src="./sources/vector-logo/figma-logo.svg" class="skill-card__image" alt="Figma">
-        </a>
-
-      </div>    
-    </div>
-  </section>
-
-
-<!-- ------------------ -->
+  </div>
 
   <canvas class="background"></canvas>
   <!-- partial -->
   <script src="./index.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </body>
 
 </html>

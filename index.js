@@ -42,11 +42,6 @@ window.onload = function () {
 
 // dom manipulation script starts //
 
-// add h1 and h2 elements to hero div element //
-var heroDiv = document.querySelector(".hero");
-heroDiv.innerHTML = "<h1>Hello World!</h1><h2>I&apos;m Yusuf</h2>";
-
-
 
 // don't display the hero div element on page load //
 document.querySelector(".hero").style.display = "none";

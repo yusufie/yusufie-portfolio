@@ -469,6 +469,26 @@ a:hover {
 	font-size: 2rem;
   }
 
+  .profile-card {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 1rem;
+  }
+
+  .language-card {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 1rem;
+  }
+
+  .skills-item {
+	padding: 0.5rem;
+  }
+
 /* sections end */
 
 

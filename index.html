@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
 
@@ -16,8 +15,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500&family=Raleway:wght@100;200;300;400;500&family=Roboto:wght@300;400;700&display=swap" >
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700&family=Poppins:wght@300;400&family=Space+Mono:wght@400;700&display=swap" >
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/4.0.0/iconfont/material-icons.min.css'>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./index.css">
 </head>
 
@@ -45,11 +43,86 @@
         <section class="projects" id="projects">
 
           <h2 class="section__title it">Projects</h2>
-          <div class="projects__grid">
 
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="project" id="project-card-1">
+                    <h3>developer - Page</h3>
+                    
+                    <ul class="project__stack">
+                      <li class="project__stack-item">React</li>
+                      <li class="project__stack-item">Material UI</li>
+                      <li class="project__stack-item">API</li>
+                    </ul>
+                    <a class="link link--icon" href="#" aria-label="source code">
+                      <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a class="link link--icon" href="#" aria-label="live preview">
+                      <i class="fab fa-codepen" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="project" id="project-card-2">
+                    <h3>Portfolio - Page</h3>
+                    
+                    <ul class="project__stack">
+                      <li class="project__stack-item">React</li>
+                      <li class="project__stack-item">Material UI</li>
+                      <li class="project__stack-item">API</li>
+                    </ul>
+                    <a class="link link--icon" href="#" aria-label="source code">
+                      <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a class="link link--icon" href="#" aria-label="live preview">
+                      <i class="fab fa-codepen" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="project" id="project-card-3">
+                    <h3>Madlibs - Policeman</h3>
+                    
+                    <ul class="project__stack">
+                      <li class="project__stack-item">React</li>
+                      <li class="project__stack-item">Material UI</li>
+                      <li class="project__stack-item">API</li>
+                    </ul>
+                    <a class="link link--icon" href="#" aria-label="source code">
+                      <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a class="link link--icon" href="#" aria-label="live preview">
+                      <i class="fab fa-codepen" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="project" id="project-card-4">
+                    <h3>Hangman - Harry Potter</h3>
+                    
+                    <ul class="project__stack">
+                      <li class="project__stack-item">React</li>
+                      <li class="project__stack-item">Material UI</li>
+                      <li class="project__stack-item">API</li>
+                    </ul>
+                    <a class="link link--icon" href="#" aria-label="source code">
+                      <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a class="link link--icon" href="#" aria-label="live preview">
+                      <i class="fab fa-codepen" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
                   <div class="project" id="project-card-5">
                     <h3>Movie Page - Recoded</h3>
-                    <p class="project__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id posuere est. </p>
+                    
                     <ul class="project__stack">
                       <li class="project__stack-item">React</li>
                       <li class="project__stack-item">Express</li>
@@ -62,74 +135,12 @@
                       <i class="fab fa-codepen" aria-hidden="true"></i>
                     </a>
                   </div>
+                </div>
 
-                  <div class="project" id="project-card-1">
-                    <h3>developer - Page</h3>
-                    <p class="project__description">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-                    <ul class="project__stack">
-                      <li class="project__stack-item">React</li>
-                      <li class="project__stack-item">Material UI</li>
-                      <li class="project__stack-item">API</li>
-                    </ul>
-                    <a class="link link--icon" href="#" aria-label="source code">
-                      <i class="fab fa-github" aria-hidden="true"></i>
-                    </a>
-                    <a class="link link--icon" href="#" aria-label="live preview">
-                      <i class="fab fa-codepen" aria-hidden="true"></i>
-                    </a>
-                  </div>
-
-                  <div class="project" id="project-card-2">
-                    <h3>Portfolio - Page</h3>
-                    <p class="project__description">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-                    <ul class="project__stack">
-                      <li class="project__stack-item">React</li>
-                      <li class="project__stack-item">Material UI</li>
-                      <li class="project__stack-item">API</li>
-                    </ul>
-                    <a class="link link--icon" href="#" aria-label="source code">
-                      <i class="fab fa-github" aria-hidden="true"></i>
-                    </a>
-                    <a class="link link--icon" href="#" aria-label="live preview">
-                      <i class="fab fa-codepen" aria-hidden="true"></i>
-                    </a>
-                  </div>
-
-                  <div class="project" id="project-card-3">
-                    <h3>Madlibs - Policeman</h3>
-                    <p class="project__description">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-                    <ul class="project__stack">
-                      <li class="project__stack-item">React</li>
-                      <li class="project__stack-item">Material UI</li>
-                      <li class="project__stack-item">API</li>
-                    </ul>
-                    <a class="link link--icon" href="#" aria-label="source code">
-                      <i class="fab fa-github" aria-hidden="true"></i>
-                    </a>
-                    <a class="link link--icon" href="#" aria-label="live preview">
-                      <i class="fab fa-codepen" aria-hidden="true"></i>
-                    </a>
-                  </div>
-
-                  <div class="project" id="project-card-4">
-                    <h3>Hangman - Harry Potter</h3>
-                    <p class="project__description">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-                    <ul class="project__stack">
-                      <li class="project__stack-item">React</li>
-                      <li class="project__stack-item">Material UI</li>
-                      <li class="project__stack-item">API</li>
-                    </ul>
-                    <a class="link link--icon" href="#" aria-label="source code">
-                      <i class="fab fa-github" aria-hidden="true"></i>
-                    </a>
-                    <a class="link link--icon" href="#" aria-label="live preview">
-                      <i class="fab fa-codepen" aria-hidden="true"></i>
-                    </a>
-                  </div>
-
+                <div class="swiper-slide">
                   <div class="project" id="project-card-6">
                     <h3>Tribute Page - FreeCodeCamp</h3>
-                    <p class="project__description">In at volutpat sem. Vivamus gravida volutpat dolor, vel lobortis diam. </p>
+                    
                     <ul class="project__stack">
                       <li class="project__stack-item">React</li>
                       <li class="project__stack-item">PHP</li>
@@ -142,10 +153,12 @@
                       <i class="fab fa-codepen" aria-hidden="true"></i>
                     </a>
                   </div>
+                </div>
 
+                <div class="swiper-slide">
                   <div class="project" id="project-card-7">
                     <h3>Honey - Product</h3>
-                    <p class="project__description">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                    
                     <ul class="project__stack">
                       <li class="project__stack-item">React</li>
                       <li class="project__stack-item">Material UI</li>
@@ -158,10 +171,12 @@
                       <i class="fab fa-codepen" aria-hidden="true"></i>
                     </a>
                   </div>
+                </div>
 
+                <div class="swiper-slide">
                   <div class="project" id="project-card-8">
                     <h3>Honey - Product</h3>
-                    <p class="project__description">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                    
                     <ul class="project__stack">
                       <li class="project__stack-item">React</li>
                       <li class="project__stack-item">Material UI</li>
@@ -174,8 +189,32 @@
                       <i class="fab fa-codepen" aria-hidden="true"></i>
                     </a>
                   </div>
+                </div>
 
-          </div>
+                <div class="swiper-slide">
+                  <div class="project" id="project-card-9">
+                    <h3>Refubook - Blog Page</h3>
+                    
+                    <ul class="project__stack">
+                      <li class="project__stack-item">React</li>
+                      <li class="project__stack-item">Material UI</li>
+                      <li class="project__stack-item">API</li>
+                    </ul>
+                    <a class="link link--icon" href="#" aria-label="source code">
+                      <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a class="link link--icon" href="#" aria-label="live preview">
+                      <i class="fab fa-codepen" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+
         </section>
 
         <!-- Skills-->
@@ -281,10 +320,56 @@
         <div class="btn" id="btnSkills"><a href="#skills" >Skills</a></div>
   </div>
 
+
+
+
+
   <canvas class="background"></canvas>
   <!-- partial -->
   <script src="./index.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  
+
+  <script>
+          var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            freeMode: true,
+            cssMode: true,
+            loop: true,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            breakpoints: {
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+              },
+              1440: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+              },
+              2560: {
+                slidesPerView: 5,
+                spaceBetween: 20,
+              },
+            },
+          });
+  </script>
+
 </body>
 
 </html>

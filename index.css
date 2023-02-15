@@ -274,36 +274,8 @@ a:hover {
 	text-transform: uppercase;
   }
 
-.about {
-	flex-direction: column;
-	width: 90%;
-	padding: 30px;
-	margin: 0 auto;
-	z-index: 2;
-  }
-  
-  .about__role {
-	margin-top: 1.2em;
-  }
-  
-  .about__desc {
-	font-size: 1rem;
-	max-width: 600px;
-  }
-  
-  .about__desc,
-  .about__contact {
-	margin-top: 2.4em;
-  }
-  
-  .about .link--icon {
-	float: right;
-	margin-right: 0.8em;
-  }
-  
-  .about .btn--outline {
-	margin-right: 1em;
-  }
+
+
 
 
   
@@ -486,6 +458,15 @@ a:hover {
 
   .skills-item {
 	padding: 0.5rem;
+  }
+
+
+  div#about.section.about {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
   }
 
 /* sections end */

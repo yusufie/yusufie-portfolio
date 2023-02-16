@@ -95,7 +95,7 @@ p {
 
 i {
   color: #00ffff;
-  margin: 15px;
+  margin: 1rem;
   transition: transform 0.7s ease;
 }
 
@@ -285,7 +285,7 @@ a:hover {
 
   
   .project {
-	padding: 1rem;
+	padding: 4rem;
 	margin: 0 auto;
 	text-align: center;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;

@@ -62,6 +62,11 @@ h2 {
   font-size: 3vw;
   /* transition: transform 0.7s ease; */
 }
+
+h3 {
+	color: #ff0099;
+}
+
 h1:hover {
   color: #ff0099;
   /* transform: scale(1.05); */
@@ -89,7 +94,7 @@ p {
 }
 
 i {
-  color: #e5e1e1;
+  color: #00ffff;
   margin: 15px;
   transition: transform 0.7s ease;
 }
@@ -98,7 +103,7 @@ i:hover {
   -ms-transform: scale(1.2); /* IE 9 */
   -webkit-transform: scale(1.2); /* Safari 3-8 */
   transform: scale(1.2);
-  color: #00ffff;
+  color: #ff0099;
 }
 a {
   text-decoration: none;

@@ -53,22 +53,22 @@ h1 {
   padding-top: 30px;
   letter-spacing: 1px;
   font-size: 4vw;
-  transition: transform 0.7s ease;
+  /* transition: transform 0.7s ease; */
 }
 h2 {
   color: #00ffff;
   padding-top: 10px;
   letter-spacing: 5px;
   font-size: 3vw;
-  transition: transform 0.7s ease;
+  /* transition: transform 0.7s ease; */
 }
 h1:hover {
   color: #ff0099;
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
 }
 h2:hover {
   color: #ff0099;
-  transform: scale(1.03);
+  /* transform: scale(1.03); */
 }
 
 footer {
